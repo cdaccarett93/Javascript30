@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background-color: #27292A;
+}
+
+.flex-grid-thirds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col {
+  background: salmon;
+  padding: 20px;
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid-thirds {
+    display: block;
+  }
+  .flex-grid-thirds .col {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+.clock {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 10px solid #CCCCCC;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.clock .top {
+  position: absolute;
+  width: 3px;
+  height: 8px;
+  background: #262626;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.clock .top span {
+    position: absolute;
+    top: 6px;
+    left: -6px;
+    
+}
+
+.clock .right {
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  background: #262626;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+}
+
+.clock .right span {
+    position: absolute;
+    bottom: -8px;
+    right: 8px;
+}
+
+
+.clock .bottom {
+  position: absolute;
+  width: 3px;
+  height: 8px;
+  background: #262626;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.clock .bottom span {
+    position: absolute;
+    bottom: 5px;
+    right: -3px;
+}
+
+
+.clock .left {
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  background: #262626;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+}
+
+.clock .left span {
+    position: absolute;
+    bottom: -8px;
+    left: 9px;
+}
+
+.clock .center {
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #262626;
+  border-radius: 100%;
+}
+
+.clock .hour {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0, 2.77, 0.58, 1);
+}
+.clock .hour:before {
+  position: absolute;
+  content: "";
+  background: #262626;
+  height: 60px;
+  width: 3px;
+  top: 30px;
+}
+.clock .minute {
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0, 2.77, 0.58, 1);
+}
+.clock .minute:before {
+  position: absolute;
+  content: "";
+  background: #262626;
+  height: 40px;
+  width: 1px;
+  top: 50px;
+}
+.clock .second {
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0, 2.77, 0.58, 1);
+}
+.clock .second:before {
+  position: absolute;
+  content: "";
+  background: #fd1111;
+  height: 45px;
+  width: 2px;
+  top: 45px;
+}
