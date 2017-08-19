@@ -1,3 +1,17 @@
+:root {
+    --base: #fff;
+    --spacing: 10px;
+    --blur: 0px;
+    --brightness: 100%;
+    --contrast: 100%;
+    --grayscale: 0%;
+    --hue-rotate: 0deg;
+    --invert: 0%;
+    --opacity: 100%;
+    --saturate: 100%;
+    --sepia: 0%;
+}
+
 body,
 html {
     margin: 0;
@@ -23,6 +37,10 @@ h1 {
     justify-content: center;
 }
 
+.highlighter {
+    color: var(--base);
+}
+
 input {
     width: 100px;
 }
@@ -42,6 +60,20 @@ input {
     margin-bottom: 1%;
 }
 
+.middlecontainer {
+    margin-top: 2%;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
 .controls {
     margin-bottom: 25px;
+}
+
+img {
+    width: 50%;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur)) brightness(var(--brightness)) contrast(var(--contrast)) grayscale(var(--grayscale)) hue-rotate(var(--hue-rotate)) invert(var(--invert)) opacity(var(--opacity)) saturate(var(--saturate)) sepia(var(--sepia));
 }

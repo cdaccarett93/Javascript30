@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Image Filters</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <h1>Filter your images using JS</h1>
-      <div class="topcontainer">
-    <div class="container">
-        <div class="controls">
-            <label for="spacing">Spacing:</label>
-            <input id="spacing" type="range" name="spacing" min="0" max="200" value="10" data-sizing="px">
+    <h1>Filter your images using <span class="highlighter">JS</span></h1>
+    <div class="topcontainer">
+        <div class="container">
+            <div class="controls">
+                <label for="spacing">Spacing:</label>
+                <input id="spacing" type="range" name="spacing" min="0" max="200" value="10" data-sizing="px">
 
-            <label for="blur">Blur:</label>
-            <input id="blur" type="range" name="blur" min="0" max="10" value="0" data-sizing="px">
+                <label for="blur">Blur:</label>
+                <input id="blur" type="range" name="blur" min="0" max="10" value="0" data-sizing="px">
 
-            <label for="brightness">Brightness:</label>
-            <input id="brightness" type="range" name="brightness" min="0" max="300" value="100" data-sizing="%">
+                <label for="brightness">Brightness:</label>
+                <input id="brightness" type="range" name="brightness" min="0" max="300" value="100" data-sizing="%">
 
-            <label for="contrast">Contrast:</label>
-            <input id="contrast" type="range" name="contrast" min="0" max="300" value="100" data-sizing="%">
+                <label for="contrast">Contrast:</label>
+                <input id="contrast" type="range" name="contrast" min="0" max="300" value="100" data-sizing="%">
 
-            <label for="grayscale">Grayscale:</label>
-            <input id="grayscale" type="range" name="grayscale" min="0" max="100" value="0" data-sizing="%">
+                <label for="grayscale">Grayscale:</label>
+                <input id="grayscale" type="range" name="grayscale" min="0" max="100" value="0" data-sizing="%">
+            </div>
+        </div>
+        <div class="container">
+            <div class="controls">
+                <label for="hue-rotate">Hue-rotate:</label>
+                <input id="hue-rotate" type="range" name="hue-rotate" min="0" max="360" value="0" data-sizing="deg">
+
+                <label for="invert">Invert:</label>
+                <input id="invert" type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+
+                <label for="opacity">Opacity:</label>
+                <input id="opacity" type="range" name="opacity" min="0" max="100" value="100" data-sizing="%">
+
+                <label for="saturate">Saturate:</label>
+                <input id="saturate" type="range" name="saturate" min="0" max="300" value="100" data-sizing="%">
+
+                <label for="sepia">Sepia:</label>
+                <input id="sepia" type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+            </div>
+        </div>
+        <div class="container">
+            <div class="controls">
+                <label for="base">Base Color</label>
+                <input id="base" type="color" name="base" value="#ffffff">
+
+                <label for="imgurl">Img Url</label>
+                <input id="imgurl" type="text" name="imgurl" value="">
+                <input id="imgup" type="submit" value="Upload Img">
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="controls">
-            <label for="hue-rotate">Hue-rotate:</label>
-            <input id="hue-rotate" type="range" name="hue-rotate" min="0" max="360" value="0" data-sizing="deg">
-
-            <label for="invert">Invert:</label>
-            <input id="invert" type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
-
-            <label for="opacity">Opacity:</label>
-            <input id="opacity" type="range" name="opacity" min="0" max="100" value="100" data-sizing="%">
-
-            <label for="saturate">Saturate:</label>
-            <input id="saturate" type="range" name="saturate" min="0" max="300" value="100" data-sizing="%">
-
-            <label for="sepia">Sepia:</label>
-            <input id="sepia" type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+    <div class="middlecontainer">
+        <div class="container">
+            <img id="myimg" src="imgs/stock.jpg" alt="">
         </div>
     </div>
-    <div class="container">
-        <div class="controls">
-            <label for="base">Base Color</label>
-            <input id="base" type="color" name="base" value="#ffffff">
-            
-            <label for="imgurl">Img Url</label>
-            <input id="imgurl" type="text" name="imgurl" value="">
-            <input id="imgup" type="submit" value="Upload Img">
-        </div>
-    </div>
-    </div>
-   
-   <script src="js/main.js"></script> 
+    <script src="js/main.js"></script>
 </body>
+
 </html>
