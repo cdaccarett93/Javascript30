@@ -1,0 +1,22 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #255;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
