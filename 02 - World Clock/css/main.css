@@ -22,16 +22,21 @@ body {
           justify-content: space-between;
 }
 
+.flex-grid-thirds:last-of-type {
+    margin-top: 1%;
+}
+
 .col {
   background: salmon;
   padding: 20px;
+  height: 49vh;
 }
 
 .flex-grid-thirds .col {
   width: 32%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .flex-grid-thirds {
     display: block;
   }
@@ -39,6 +44,14 @@ body {
     width: 100%;
     margin: 0 0 10px 0;
   }
+}
+
+h1,
+h2 {
+    color: #ffffff;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clock {
@@ -191,4 +204,35 @@ body {
   height: 45px;
   width: 2px;
   top: 45px;
+}
+
+
+.nybg {
+    background: url('../imgs/newyork.jpg');
+    background-size: cover;
+}
+
+.labg {
+    background: url('../imgs/losangeles.jpg');
+    background-size: cover;
+}
+
+.parisbg {
+    background: url('../imgs/paris.jpg');
+    background-size: cover;
+}
+
+.shaibg {
+    background: url('../imgs/shanghai.jpg');
+    background-size: cover;
+}
+
+.sydbg {
+    background: url('../imgs/sydney.jpg');
+    background-size: cover;
+}
+
+.sabg {
+    background: url('../imgs/southafrica.jpg');
+    background-size: cover;
 }

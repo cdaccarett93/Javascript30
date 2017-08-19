@@ -1,86 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>World Clocks</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
-<div class="flex-grid-thirds">
+    <div class="flex-grid-thirds">
 
-<div class="col">
-<div class="clock">
-  <div class="top"><span>12</span></div>
-  <div class="right"><span>3</span></div>
-  <div class="bottom"><span>6</span></div>
-  <div class="left"><span>9</span></div>
-  <div class="center"></div>
-  <div class="shadow"></div>
-  <div class="hour"></div>
-  <div class="minute"></div>
-  <div class="second"></div>
-</div>
-</div>
+        <div class="col nybg">
+            <div class="clock">
+                <div class="top"><span>12</span></div>
+                <div class="right"><span>3</span></div>
+                <div class="bottom"><span>6</span></div>
+                <div class="left"><span>9</span></div>
+                <div class="center"></div>
+                <div class="shadow"></div>
+                <div class="hour"></div>
+                <div class="minute"></div>
+                <div class="second"></div>
+            </div>
+            <h1>New York</h1>
+            <h2 id="ny"></h2>
+        </div>
 
-<div class="col">
-<div class="clock">
-  <div class="top"><span>12</span></div>
-  <div class="right"><span>3</span></div>
-  <div class="bottom"><span>6</span></div>
-  <div class="left"><span>9</span></div>
-  <div class="center"></div>
-  <div class="shadow"></div>
-  <div class="hour"></div>
-  <div class="minute"></div>
-  <div class="second"></div>
-</div>
-</div>
+        <div class="col labg">
+            <div class="clock">
+                <div class="top"><span>12</span></div>
+                <div class="right"><span>3</span></div>
+                <div class="bottom"><span>6</span></div>
+                <div class="left"><span>9</span></div>
+                <div class="center"></div>
+                <div class="shadow"></div>
+                <div class="hour"></div>
+                <div class="minute"></div>
+                <div class="second"></div>
+            </div>
+            <h1>Los Angeles</h1>
+            <h2 id="la"></h2>
+        </div>
 
-<div class="col">
-<div class="clock">
-  <div class="top"><span>12</span></div>
-  <div class="right"><span>3</span></div>
-  <div class="bottom"><span>6</span></div>
-  <div class="left"><span>9</span></div>
-  <div class="center"></div>
-  <div class="shadow"></div>
-  <div class="hour"></div>
-  <div class="minute"></div>
-  <div class="second"></div>
-</div>
-</div>
+        <div class="col parisbg">
+            <div class="clock">
+                <div class="top"><span>12</span></div>
+                <div class="right"><span>3</span></div>
+                <div class="bottom"><span>6</span></div>
+                <div class="left"><span>9</span></div>
+                <div class="center"></div>
+                <div class="shadow"></div>
+                <div class="hour"></div>
+                <div class="minute"></div>
+                <div class="second"></div>
+            </div>
+            <h1>Paris</h1>
+            <h2 id="paris"></h2>
+        </div>
 
-</div>
-
-<script>
-
-    const secondsHand = document.querySelectorAll('.second');
-    const minHand = document.querySelector('.minute');
-    const hourHand = document.querySelector('.hour');
+    </div>
     
-    
-    function setDate() {
-        const now = new Date();
-        const seconds = now.getSeconds();
-        const secondsDeg = (seconds / 60) * 360;
-        
-        const minutes = now.getMinutes();
-        const minsDeg = (minutes / 60) * 360;
-        
-        const hours = now.getHours();
-        const hoursDeg = (hours / 12) * 360;
-        
-//    for(var i = 0; i < secondsHand.length; i++)
-        
-    secondsHand[0].style.transform = `rotate(${secondsDeg}deg)`;
-    secondsHand[1].style.transform = `rotate(${secondsDeg}deg)`;
-    secondsHand[2].style.transform = `rotate(${secondsDeg}deg)`;
-    minHand.style.transform = `rotate(${minsDeg}deg)`;
-    hourHand.style.transform = `rotate(${hoursDeg}deg)`;
-    }
-    
-    setInterval(setDate, 1000);
-</script>
+    <div class="flex-grid-thirds">
+
+        <div class="col shaibg">
+            <div class="clock">
+                <div class="top"><span>12</span></div>
+                <div class="right"><span>3</span></div>
+                <div class="bottom"><span>6</span></div>
+                <div class="left"><span>9</span></div>
+                <div class="center"></div>
+                <div class="shadow"></div>
+                <div class="hour"></div>
+                <div class="minute"></div>
+                <div class="second"></div>
+            </div>
+            <h1>Shanghai</h1>
+            <h2 id="shai"></h2>
+        </div>
+
+        <div class="col sydbg">
+            <div class="clock">
+                <div class="top"><span>12</span></div>
+                <div class="right"><span>3</span></div>
+                <div class="bottom"><span>6</span></div>
+                <div class="left"><span>9</span></div>
+                <div class="center"></div>
+                <div class="shadow"></div>
+                <div class="hour"></div>
+                <div class="minute"></div>
+                <div class="second"></div>
+            </div>
+            <h1>Sydney</h1>
+            <h2 id="syd"></h2>
+        </div>
+
+        <div class="col sabg">
+            <div class="clock">
+                <div class="top"><span>12</span></div>
+                <div class="right"><span>3</span></div>
+                <div class="bottom"><span>6</span></div>
+                <div class="left"><span>9</span></div>
+                <div class="center"></div>
+                <div class="shadow"></div>
+                <div class="hour"></div>
+                <div class="minute"></div>
+                <div class="second"></div>
+            </div>
+            <h1>South Africa</h1>
+            <h2 id="sa"></h2>
+        </div>
+
+    </div>
+
+    <script>
+        const secondsHand = document.querySelectorAll('.second');
+        const minHand = document.querySelectorAll('.minute');
+        const hourHand = document.querySelectorAll('.hour');
+
+        function setDate() {
+            const NYdate = new Date().toLocaleTimeString("en-US", {timeZone: "America/New_York"});
+            const LAdate = new Date().toLocaleTimeString("en-US", {timeZone: "America/Los_Angeles"});
+            const Parisdate = new Date().toLocaleTimeString("en-US", {timeZone: "Europe/Paris"});
+            const Shaidate = new Date().toLocaleTimeString("en-US", {timeZone: "Asia/Shanghai"});
+            const Syddate = new Date().toLocaleTimeString("en-US", {timeZone: "Australia/Sydney"});
+            const SAdate = new Date().toLocaleTimeString("en-US", {timeZone: "Africa/Johannesburg"});
+            
+            document.getElementById('ny').innerHTML = NYdate;
+            document.getElementById('la').innerHTML = LAdate;
+            document.getElementById('paris').innerHTML = Parisdate;
+            document.getElementById('shai').innerHTML = Shaidate;
+            document.getElementById('syd').innerHTML = Syddate;
+            document.getElementById('sa').innerHTML = SAdate;
+
+            const NYtimes = NYdate.split(':');
+            const LAtimes = LAdate.split(':');
+            const Paristimes = Parisdate.split(':');
+            const Shaitimes = Shaidate.split(':');
+            const Sydtimes = Syddate.split(':');
+            const SAtimes = SAdate.split(':');
+
+            const NYseconds = NYtimes[2].slice(0, 2);
+            const NYminutes = NYtimes[1];
+            const NYhours = NYtimes[0];
+
+            const LAseconds = LAtimes[2].slice(0, 2);
+            const LAminutes = LAtimes[1];
+            const LAhours = LAtimes[0];
+
+            const Parisseconds = Paristimes[2].slice(0, 2);
+            const Parisminutes = Paristimes[1];
+            const Parishours = Paristimes[0];
+            
+            const Shaiseconds = Shaitimes[2].slice(0, 2);
+            const Shaiminutes = Shaitimes[1];
+            const Shaihours = Shaitimes[0];
+            
+            const Sydseconds = Sydtimes[2].slice(0, 2);
+            const Sydminutes = Sydtimes[1];
+            const Sydhours = Sydtimes[0];
+            
+            const SAseconds = SAtimes[2].slice(0, 2);
+            const SAminutes = SAtimes[1];
+            const SAhours = SAtimes[0];
+
+            const NYsecondsDeg = (NYseconds / 60) * 360;
+            const NYminsDeg = (NYminutes / 60) * 360;
+            const NYhoursDeg = (NYhours / 12) * 360;
+
+            const LAsecondsDeg = (LAseconds / 60) * 360;
+            const LAminsDeg = (LAminutes / 60) * 360;
+            const LAhoursDeg = (LAhours / 12) * 360;
+
+            const ParissecondsDeg = (Parisseconds / 60) * 360;
+            const ParisminsDeg = (Parisminutes / 60) * 360;
+            const ParishoursDeg = (Parishours / 12) * 360;
+            
+            const ShaisecondsDeg = (Shaiseconds / 60) * 360;
+            const ShaiminsDeg = (Shaiminutes / 60) * 360;
+            const ShaihoursDeg = (Shaihours / 12) * 360;
+
+            const SydsecondsDeg = (Sydseconds / 60) * 360;
+            const SydminsDeg = (Sydminutes / 60) * 360;
+            const SydhoursDeg = (Sydhours / 12) * 360;
+
+            const SAsecondsDeg = (SAseconds / 60) * 360;
+            const SAminsDeg = (SAminutes / 60) * 360;
+            const SAhoursDeg = (SAhours / 12) * 360;
+
+
+            secondsHand[0].style.transform = `rotate(${NYsecondsDeg}deg)`;
+            minHand[0].style.transform = `rotate(${NYminsDeg}deg)`;
+            hourHand[0].style.transform = `rotate(${NYhoursDeg}deg)`;
+
+            secondsHand[1].style.transform = `rotate(${LAsecondsDeg}deg)`;
+            minHand[1].style.transform = `rotate(${LAminsDeg}deg)`;
+            hourHand[1].style.transform = `rotate(${LAhoursDeg}deg)`;
+
+            secondsHand[2].style.transform = `rotate(${ParissecondsDeg}deg)`;
+            minHand[2].style.transform = `rotate(${ParisminsDeg}deg)`;
+            hourHand[2].style.transform = `rotate(${ParishoursDeg}deg)`;
+            
+            secondsHand[3].style.transform = `rotate(${ShaisecondsDeg}deg)`;
+            minHand[3].style.transform = `rotate(${ShaiminsDeg}deg)`;
+            hourHand[3].style.transform = `rotate(${ShaihoursDeg}deg)`;
+
+            secondsHand[4].style.transform = `rotate(${SydsecondsDeg}deg)`;
+            minHand[4].style.transform = `rotate(${SydminsDeg}deg)`;
+            hourHand[4].style.transform = `rotate(${SydhoursDeg}deg)`;
+
+            secondsHand[5].style.transform = `rotate(${SAsecondsDeg}deg)`;
+            minHand[5].style.transform = `rotate(${SAminsDeg}deg)`;
+            hourHand[5].style.transform = `rotate(${SAhoursDeg}deg)`;
+        }
+
+        setInterval(setDate, 1000);
+    </script>
 </body>
+
 </html>
