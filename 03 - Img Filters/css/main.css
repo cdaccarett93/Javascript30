@@ -4,12 +4,14 @@ html {
     padding: 0;
 }
 
-html {
-    background: #255;
-    font-family: 'helvetica neue', sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-}
+body {
+        background: #255;
+      text-align: center;
+      color: white;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 100;
+      font-size: 20px;
+    }
 
 h1 {
     color: #fff;
@@ -19,4 +21,27 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+input {
+    width: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.topcontainer {
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.controls {
+    margin-bottom: 25px;
 }
