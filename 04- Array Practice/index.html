@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Practice</title>
+</head>
+<style>
+    table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+    </style>
+<body>
+   
+   <table>
+   <thead>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Birth Year</th>
+    <th>Death Year</th>
+  </tr>
+  </thead>
+  <tbody id="tbody">
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>1190</td>
+    <td>1290</td>
+  </tr>
+  </tbody>
+</table>
+   
+   <h2>Find Inventors born between:</h2>
+   <label for="byear">Birth Year Low:</label>
+   <input id="byearlow" type="number">
+   <label for="dyear">Birth Year High:</label>
+   <input id="byearhigh" type="number">
+   <input id="byearfilter" type="submit" value="Filter">
+   <input id="cleartable" type="submit" value="Clear">
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
